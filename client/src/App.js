@@ -8,12 +8,14 @@ import Home from './pages/Home';
 import DataProvider from './context/DataProvider';
 import InterviewData from './pages/InterviewData';
 import Footer from './components/footer/Footer';
+import Navbar2 from './components/navbar/Navbar2';
 
 function App() {
   return (
     <DataProvider>
       <BrowserRouter>
-        <Navbar/>
+        <Navbar2/>
+        {/* <Navbar/> */}
         <Routes>
           <Route path='signup' element={<Signup/>}/>
           <Route path='login' element={<Login/>}/>
